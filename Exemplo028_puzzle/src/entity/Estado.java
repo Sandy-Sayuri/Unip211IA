@@ -6,11 +6,11 @@ import java.util.Collection;
 public class Estado {
 	
 	Tabuleiro tabuleiro;
-	
+	//encapsulament do tabuleiro
 	public Estado(Tabuleiro aTabuleiro) {
 		this.tabuleiro = aTabuleiro;
 	}
-	
+	//função que fala se está certo ou errado o objetivo
 	public boolean isObjetivo() {
 		
 		if(this.equals(EspacoDeEstados.OBJETIVO))
