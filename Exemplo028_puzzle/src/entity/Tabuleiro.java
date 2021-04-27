@@ -3,11 +3,11 @@ package entity;
 import java.util.Arrays;
 
 public class Tabuleiro {
-	
+	//aqui é definido o tamanho da matriz
 	public static final int N = 3; 
-	
+	//gera a matriz
 	int[][] pecas;
-	
+	//emcapsulamento da matriz
 	public Tabuleiro(int[][] aPecas) {
 		this.pecas = aPecas;
 	}
@@ -92,6 +92,7 @@ public class Tabuleiro {
 
 
 	@Override
+	//Trasforma a lista em uma matriz
 	public String toString() {
 		String res = "";
 		

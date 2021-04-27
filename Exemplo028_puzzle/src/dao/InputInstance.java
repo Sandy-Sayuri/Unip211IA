@@ -20,14 +20,20 @@ public class InputInstance {
 		BufferedReader br;
 		
 		try {
-			
+			//Lê arquivos
 			is = new FileInputStream(file);
+			//comversoer de caracter
 			isr = new InputStreamReader(is, StandardCharsets.UTF_8);
+			//lê uma linaha de arquivo de cada vez
 			br = new BufferedReader(isr);
+			//varieavel que vai guardar a linha
 			String line;
+			//??
 			int[][] pecas = new int[Tabuleiro.N][Tabuleiro.N];
 			for(int i=0; i<Tabuleiro.N; i++) {
+				//leitura de elementos
 				line = br.readLine();
+				//guarda o elementosna lista valores
 				String[] valores = line.split(" ");
 				for(int j=0; j<Tabuleiro.N; j++) {
 					pecas[i][j] = Integer.parseInt(valores[j]);

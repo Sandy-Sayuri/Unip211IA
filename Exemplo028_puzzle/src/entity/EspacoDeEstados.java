@@ -6,7 +6,7 @@ import entity.estruturas.EstadoAbertos;
 import entity.estruturas.Fila;
 
 public class EspacoDeEstados {
-	
+	//definição do objetivo
 	 public static final Estado OBJETIVO = new Estado(
 			 new Tabuleiro(
 					 new int[][]{
@@ -20,6 +20,10 @@ public class EspacoDeEstados {
 	 EstadoAbertos ea;
 	 
 	 public EspacoDeEstados(Estado aInicial, EstadoAbertos aEstruturaAbertos) {
+
+	 EstadoAbertos ea = new Fila();
+	 public EspacoDeEstados(Estado aInicial) {
+
 		 this.inicial = aInicial;
 		 this.ea = aEstruturaAbertos;
 		 ea.push(this.inicial);

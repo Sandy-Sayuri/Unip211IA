@@ -10,6 +10,7 @@ public class Estado {
 	Tabuleiro tabuleiro;
 	List<Acao> acoes;
 	
+
 	public Estado(Tabuleiro aTabuleiro) {
 		this.tabuleiro = aTabuleiro;
 		this.acoes = new LinkedList<>();
@@ -20,7 +21,7 @@ public class Estado {
 		this.acoes = aAcoes;
 		
 	}
-	
+	//função que fala se está certo ou errado o objetivo
 	public boolean isObjetivo() {
 		
 		if(this.equals(EspacoDeEstados.OBJETIVO))
